@@ -316,14 +316,14 @@ public class MsgJDBCDAO implements MsgDAO_interface {
 //		dao.insert(msgVO1);
 
 ////		// 修改
-		MsgVO msgVO2 = new MsgVO();
-		msgVO2.setActMsgNo(2);
-		msgVO2.setActMsg("我討厭明天");
-		msgVO2.setActNo(422222);
-		msgVO2.setMenNo(000003);
-		msgVO2.setActMsgTime(java.sql.Date.valueOf("2024-06-09"));
-		msgVO2.setMsgPic(null);
-		dao.update(msgVO2);
+//		MsgVO msgVO2 = new MsgVO();
+//		msgVO2.setActMsgNo(2);
+//		msgVO2.setActMsg("我討厭明天");
+//		msgVO2.setActNo(422222);
+//		msgVO2.setMenNo(000003);
+//		msgVO2.setActMsgTime(java.sql.Date.valueOf("2024-06-09"));
+//		msgVO2.setMsgPic(null);
+//		dao.update(msgVO2);
 ////
 ////		// 刪除
 //		dao.delete(3);
@@ -339,17 +339,17 @@ public class MsgJDBCDAO implements MsgDAO_interface {
 //		System.out.println("---------------------");
 //
 //		// 查詢
-//		List<MsgVO> list = dao.getAll();
-//		for (MsgVO aMsg : list) {
-//			System.out.print(aMsg.getActMsgNo() + ",");
-//			System.out.print(aMsg.getActMsg() + ",");
-//			System.out.print(aMsg.getActNo() + ",");
-//			System.out.print(aMsg.getMenNo() + ",");
-//			System.out.print(aMsg.getActMsgTime() + ",");
-//			System.out.print(aMsg.getMsgPic() + ",\t");
-////			System.out.print(aEmp.getDeptVO()); // join DeptVO
-//			System.out.println();
-//		}
+		List<MsgVO> list = dao.getAll();
+		for (MsgVO aMsg : list) {
+			System.out.print(aMsg.getActMsgNo() + ",");
+			System.out.print(aMsg.getActMsg() + ",");
+			System.out.print(aMsg.getActNo() + ",");
+			System.out.print(aMsg.getMenNo() + ",");
+			System.out.print(aMsg.getActMsgTime() + ",");
+			System.out.print(aMsg.getMsgPic() + ",\t");
+//			System.out.print(aEmp.getDeptVO()); // join DeptVO
+			System.out.println();
+		}
 	}
 
 }
