@@ -22,7 +22,7 @@ public class MsgDAO implements MsgDAO_interface {
 	}
 
 	private static final String INSERT_STMT = "INSERT INTO message (act_msg,act_no,men_no,act_msg_time,msg_pic) VALUES (?, ?, ?, ?, ?)";
-	private static final String GET_ALL_STMT = "SELECT act_msg_no,act_msg,act_no,men_no,act_msg_time,msg_pic FROM message order by act_msg_no)";
+	private static final String GET_ALL_STMT = "SELECT act_msg_no,act_msg,act_no,men_no,act_msg_time,msg_pic FROM message order by act_msg_no";
 	private static final String GET_ONE_STMT = "SELECT act_msg_no,act_msg,act_no,men_no,act_msg_time,msg_pic FROM message where act_msg_no = ?";
 	private static final String DELETE = "DELETE FROM message where act_msg_no = ?";
 	private static final String UPDATE = "UPDATE message set act_msg=?, act_no=?, men_no=?, act_msg_time=?, msg_pic=? where act_msg_no = ?";
